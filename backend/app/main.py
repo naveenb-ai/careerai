@@ -11,8 +11,7 @@ from app.config import settings
 from app.database import Base, engine
 
 # Import models so SQLAlchemy metadata includes all tables before create_all()
-#import app.models  # noqa: F401
-#from app import models  # noqa: F401 #for Railway deployment, this line is necessary to ensure models are imported and registered with SQLAlchemy before creating tables.
+import app.models  # noqa: F401
 
 from app.routes import auth
 from app.routes.agent import router as agent_router
