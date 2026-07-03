@@ -1,4 +1,5 @@
-﻿import logging
+﻿#base.py
+import logging
 import time
 from abc import ABC, abstractmethod
 from datetime import datetime
@@ -46,4 +47,5 @@ class BaseScraper(ABC):
                     datetime.utcnow().isoformat(),
                 )
             time.sleep(2 ** attempt)
-        return None
+        return None
+

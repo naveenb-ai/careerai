@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 # Model chosen specifically for semantic search and cosine similarity ranking
 # Trained on 215M question-answer pairs — perfect for job search matching
-MODEL_NAME = "multi-qa-MiniLM-L6-cos-v1"
+MODEL_NAME = "all-MiniLM-L6-v2"
 EMBEDDING_DIM = 384
 BATCH_SIZE = 16  # Safe for 4GB VRAM
 
