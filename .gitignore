@@ -40,10 +40,10 @@ Thumbs.db
 *.ipynb
 .ipynb_checkpoints/
 
-# ML Models (auto-downloaded)
+# ML model weight files (auto-downloaded by sentence-transformers)
+# NOTE: models/ is removed intentionally — app/models/ contains SQLAlchemy models
 *.bin
 *.safetensors
-models/
 huggingface_cache/
 
 # Logs
@@ -66,3 +66,6 @@ codex_*.txt
 
 # Test files
 test.ipynb
+
+# DB backup (large file, not needed in repo)
+career_ai_backup.sql
